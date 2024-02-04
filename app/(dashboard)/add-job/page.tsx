@@ -1,4 +1,6 @@
+import CreateJobForm from '@/components/CreateJobForm'
+
 const AddJobPage = () => {
-  return <h1 className=' text-4xl'>AddJob</h1>
+  return <CreateJobForm />
 }
 export default AddJobPage
