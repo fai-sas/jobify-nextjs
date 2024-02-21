@@ -23,6 +23,16 @@ const DeleteJobBtn = ({ id }: { id: string }) => {
     },
   })
 
-  return <h1 className='text-4xl'>DeleteJobBtn</h1>
+  return (
+    <Button
+      size='sm'
+      disabled={isPending}
+      onClick={() => {
+        mutate(id)
+      }}
+    >
+      {isPending ? 'deleting...' : 'delete'}
+    </Button>
+  )
 }
 export default DeleteJobBtn
